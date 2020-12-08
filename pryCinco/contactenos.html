@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/funcional.js"></script>
+    <script src="materialize/css/materialize.min.css"></script>
+
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" class="brand-logo">SENA</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Formulario</a></li>
+                    <li><a href="sedes.html">Sedes</a></li>
+                    <li><a href="contact.html">Conocenos</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row" >
+            <div class="input-field s4">
+                <i class="material-icons prefix">person</i>
+                <input id="your_name" type="text" class="validate">
+                <label for="your_name">Nombre</label>
+            </div>
+            <div class="input-field s4 ">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate">
+                <label for="email">Correo Electronico</label>
+            </div>
+        
+            <div class="input-field s6 ">
+                <i class="material-icons prefix">assignment</i>
+                <input id="asunto" type="text" class="validate">
+                <label for="asunto">Asunto</label>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Descripcion</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <center>
+            <div class="input-field s6">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </center>
+    </div>    
+
+        
+</body>
+</html>

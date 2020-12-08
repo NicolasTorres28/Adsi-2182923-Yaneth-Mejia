@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="materialize/js/materialize.min.js"></script>    
+    <!-- Sección global de la página -->
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" class="brand-logo">SENA</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Formulario</a></li>
+                    <li><a href="sedes.html">Sedes</a></li>
+                    <li><a href="contact.html">Conocenos</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Sección I: titulo -->
+        <div class="row">
+            <label><b>BIENVENIDOS</b></label>
+        </div>
+        <!-- Sección II: Contiene el formulario -->
+        <div class="row">
+            <form class="col s12">
+                
+                <!-- Primer fila -->
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombres</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Apellidos</label>
+                    </div>
+                </div>
+                
+                <!-- Segunda fila -->
+                <div class="row">  
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">child_care</i>
+                        <input id="age_name" type="number" class="validate">
+                        <label for="age_name">Edad</label>
+                    </div>
+                    
+                    <div class="input-field col s6">
+                        <table style="width:100%">
+                            <tr>
+                              <th>
+                                <p>
+                                    <label>
+                                        <input name="gender" type="radio" checked />
+                                        <span>M</span>
+                                    </label>
+                                </p>
+                            </th>
+                            <th>
+                                <label>
+                                    <input name="gender" type="radio" checked />
+                                    <span>F</span>
+                                </label>
+                            </th>
+                            <th>
+                                <label>
+                                    <input name="gender" type="radio" checked />
+                                    <span>Otro</span>
+                                </label>
+                            </th>
+                            
+                        </table>
+                    </div>        
+                    
+                    <!--TERCERA FILA-->
+                    </div>
+                    <div class="row">   
+                        <div class="input-field col s12">
+                            <label></label>
+                                <select class="browser-default">
+                                    <option value="" disabled selected>Estado Civil</option>
+                                    <option value="1">Soltero</option>
+                                    <option value="2">Casado</option>
+                                    <option value="3">Separado</option>
+                                    <option value="4">Union Libre</option>
+                                    <option value="5">Pareja De Hecho</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>     
+        
+                    <!--CUARTA FILA-->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <table style="width:50%">
+                                <tr>
+                                <th>
+                                    <p>
+                                        <label>
+                                            <input name="Id" type="radio" checked />
+                                            <span>T.I</span>
+                                        </label>
+                                    </p>
+                                </th>
+                                <th>
+                                    <label>
+                                        <input name="Id" type="radio" checked />
+                                        <span>C.C</span>
+                                    </label>
+                                </th>
+                            
+                            
+                            </table>
+
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">content_paste</i>
+                            <input id="number_id" type="number" class="validate">
+                            <label for="number_id">Numero Documento</label>
+                        </div>
+                        
+                    </div>
+
+                    <!--QUINTA FILA-->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">call</i>
+                            <input id="number_Cel" type="number" class="validate">
+                            <label for="number_Cel">Telefono</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="text" class="validate">
+                            <label for="email">Correo Electronico</label>
+                        </div>
+                    </div>
+                            <center>
+                            <p>
+                                <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span>Acepto el tratamiento de mis datos personales</span>
+                                </label>
+                            </p>
+                            </center>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p>
+                                <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span>Quiero recibir notificiones en mi correo electronico</span>
+                                </label>
+                            </p>
+                        </center>
+                    </div>
+
+                    <!--SEXTA FILA -->
+                    <div class="row">
+                    <center>    
+                        <div class="input-field s6">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                        <div class="input-field s6">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Cancelar
+                                <i class="material-icons right">clear</i>
+                            </button>
+                        </div>
+                    </center>      
+                    </div>                
+            </form>
+        </div>
+
+
+    </div>
+  
+</body>
+
+</html>
